@@ -14,12 +14,11 @@ namespace QLBHTH_PhanDinhDung
 
         public static bool role;
         public static string mnv;
-        [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_dangnhap_dung());
+            Application.Run(new report());
         }
     }
 }

@@ -33,11 +33,6 @@
             this.txt_mk_hai = new System.Windows.Forms.TextBox();
             this.btn_sua_hai = new System.Windows.Forms.Button();
             this.dgv_nv_hai = new System.Windows.Forms.DataGridView();
-            this.mvn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tennv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_dc_hai = new System.Windows.Forms.TextBox();
             this.txt_tennv_hai = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,10 +51,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(321, 21);
+            this.label1.Location = new System.Drawing.Point(404, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 31);
+            this.label1.Size = new System.Drawing.Size(116, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
@@ -67,14 +61,14 @@
             // 
             this.txt_mnv_hai.Location = new System.Drawing.Point(233, 89);
             this.txt_mnv_hai.Name = "txt_mnv_hai";
-            this.txt_mnv_hai.Size = new System.Drawing.Size(201, 20);
+            this.txt_mnv_hai.Size = new System.Drawing.Size(125, 20);
             this.txt_mnv_hai.TabIndex = 1;
             // 
             // txt_mk_hai
             // 
-            this.txt_mk_hai.Location = new System.Drawing.Point(594, 92);
+            this.txt_mk_hai.Location = new System.Drawing.Point(517, 92);
             this.txt_mk_hai.Name = "txt_mk_hai";
-            this.txt_mk_hai.Size = new System.Drawing.Size(241, 20);
+            this.txt_mk_hai.Size = new System.Drawing.Size(165, 20);
             this.txt_mk_hai.TabIndex = 2;
             // 
             // btn_sua_hai
@@ -92,12 +86,6 @@
             this.dgv_nv_hai.AllowUserToAddRows = false;
             this.dgv_nv_hai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_nv_hai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_nv_hai.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.mvn,
-            this.tennv,
-            this.dc,
-            this.mk,
-            this.quyen});
             this.dgv_nv_hai.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgv_nv_hai.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgv_nv_hai.Location = new System.Drawing.Point(0, 373);
@@ -106,48 +94,18 @@
             this.dgv_nv_hai.TabIndex = 4;
             this.dgv_nv_hai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_nv_hai_CellClick);
             // 
-            // mvn
-            // 
-            this.mvn.DataPropertyName = "MaNV";
-            this.mvn.HeaderText = "Mã nhân viên";
-            this.mvn.Name = "mvn";
-            // 
-            // tennv
-            // 
-            this.tennv.DataPropertyName = "TenNV";
-            this.tennv.HeaderText = "Tên nhân viên";
-            this.tennv.Name = "tennv";
-            // 
-            // dc
-            // 
-            this.dc.DataPropertyName = "Diachi";
-            this.dc.HeaderText = "Địa chỉ";
-            this.dc.Name = "dc";
-            // 
-            // mk
-            // 
-            this.mk.DataPropertyName = "Matkhau";
-            this.mk.HeaderText = "Mật khẩu";
-            this.mk.Name = "mk";
-            // 
-            // quyen
-            // 
-            this.quyen.DataPropertyName = "Quyen";
-            this.quyen.HeaderText = "Quyền";
-            this.quyen.Name = "quyen";
-            // 
             // txt_dc_hai
             // 
             this.txt_dc_hai.Location = new System.Drawing.Point(233, 194);
             this.txt_dc_hai.Name = "txt_dc_hai";
-            this.txt_dc_hai.Size = new System.Drawing.Size(201, 20);
+            this.txt_dc_hai.Size = new System.Drawing.Size(125, 20);
             this.txt_dc_hai.TabIndex = 2;
             // 
             // txt_tennv_hai
             // 
             this.txt_tennv_hai.Location = new System.Drawing.Point(233, 141);
             this.txt_tennv_hai.Name = "txt_tennv_hai";
-            this.txt_tennv_hai.Size = new System.Drawing.Size(201, 20);
+            this.txt_tennv_hai.Size = new System.Drawing.Size(125, 20);
             this.txt_tennv_hai.TabIndex = 1;
             // 
             // label2
@@ -180,7 +138,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(508, 95);
+            this.label5.Location = new System.Drawing.Point(446, 99);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 5;
@@ -189,7 +147,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(508, 151);
+            this.label6.Location = new System.Drawing.Point(446, 151);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 5;
@@ -241,9 +199,9 @@
             this.cb_quyen_hai.Items.AddRange(new object[] {
             "Nhân viên",
             "Quản  lý"});
-            this.cb_quyen_hai.Location = new System.Drawing.Point(594, 148);
+            this.cb_quyen_hai.Location = new System.Drawing.Point(517, 148);
             this.cb_quyen_hai.Name = "cb_quyen_hai";
-            this.cb_quyen_hai.Size = new System.Drawing.Size(241, 21);
+            this.cb_quyen_hai.Size = new System.Drawing.Size(165, 21);
             this.cb_quyen_hai.TabIndex = 6;
             this.cb_quyen_hai.SelectedIndexChanged += new System.EventHandler(this.cb_quyen_hai_SelectedIndexChanged);
             // 
@@ -270,7 +228,6 @@
             this.Controls.Add(this.txt_mnv_hai);
             this.Controls.Add(this.label1);
             this.Name = "frm_qlnv_hai";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_qlnv_hai";
             this.Load += new System.EventHandler(this.frm_qlnv_hai_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_nv_hai)).EndInit();
@@ -298,10 +255,5 @@
         private System.Windows.Forms.Button btn_quaylai_hai;
         private System.Windows.Forms.Button btn_nhapLai_hai;
         private System.Windows.Forms.ComboBox cb_quyen_hai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mvn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tennv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mk;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quyen;
     }
 }
